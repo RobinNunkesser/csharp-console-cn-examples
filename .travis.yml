@@ -1,0 +1,21 @@
+language:  csharp
+mono: none
+dotnet: 3.1
+
+env: 
+    - PROJECT="Socket"
+
+script:
+    - cd $PROJECT
+    - cd $PROJECT
+    - dotnet build
+    - cd ..
+    - | 
+        if [[ -d "$PROJECT.Tests" ]]
+        then 
+          cd ${PROJECT}.Tests
+          dotnet test
+          cd ..
+        fi
+    - cd ..
+
