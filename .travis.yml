@@ -2,7 +2,8 @@ language:  csharp
 mono: none
 dotnet: 3.1
 
-env: 
+env:
+    - PROJECT="MyProcessSample" 
     - PROJECT="Socket"
 
 script:
