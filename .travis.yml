@@ -3,6 +3,8 @@ mono: none
 dotnet: 3.1
 
 env:
+    - PROJECT="Client"
+    - PROJECT="Server"
     - PROJECT="Socket"
 
 script:

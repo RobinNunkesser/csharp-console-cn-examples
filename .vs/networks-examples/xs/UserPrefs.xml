@@ -1,13 +1,19 @@
-﻿<Properties StartupConfiguration="{89262CD2-A4D9-4DFC-AB16-9917B6D5671F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Socket/Socket/Program.cs">
+﻿<Properties StartupConfiguration="{0028F377-2C54-4B10-BC15-1C983E5C3E9A}|Default">
+  <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Server/Program.cs">
     <Files>
       <File FileName="Socket/Socket/Program.cs" Line="1" Column="1" />
+      <File FileName="Client/Client/Program.cs" Line="1" Column="1" />
+      <File FileName="Server/Server/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="networks-examples" expanded="True" selected="True">
-            <Node name="Socket" expanded="True" />
+          <Node name="networks-examples" expanded="True">
+            <Node name="Client" expanded="True" />
+            <Node name="Server" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -15,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Socket PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
