@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client\Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNS", "DNS\DNS\DNS.csproj", "{63E1CFCA-A30E-4D45-AE3F-5D4775818335}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "Crypto\Crypto\Crypto.csproj", "{B53E0400-1A74-4AA5-9688-80103E8738DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Tests", "Crypto.Tests\Crypto.Tests.csproj", "{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +35,13 @@ Global
 		{63E1CFCA-A30E-4D45-AE3F-5D4775818335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E1CFCA-A30E-4D45-AE3F-5D4775818335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63E1CFCA-A30E-4D45-AE3F-5D4775818335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53E0400-1A74-4AA5-9688-80103E8738DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53E0400-1A74-4AA5-9688-80103E8738DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53E0400-1A74-4AA5-9688-80103E8738DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53E0400-1A74-4AA5-9688-80103E8738DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
