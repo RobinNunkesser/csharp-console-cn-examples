@@ -6,46 +6,38 @@ using System.Text;
 namespace Crypto
 {
     public class SymCrypt
-    {
-        byte[] key;
-        byte[] IV;
-        SymmetricAlgorithm symAlg;
+    {        
+        readonly SymmetricAlgorithm symAlg;
 
         public SymCrypt(SymmetricAlgorithm symAlg, string strKey = null, byte[] IV = null)
         {
             this.symAlg = symAlg;
-            if (strKey != null)
+            switch (strKey)
             {
-                key = Encoding.UTF8.GetBytes(strKey);
-                symAlg.Key = key;
+                case null:
+                    symAlg.GenerateKey();                    
+                    break;
+                default:                    
+                    symAlg.Key = Encoding.UTF8.GetBytes(strKey);
+                    break;
             }
-            else
+            switch (IV)
             {
-                symAlg.GenerateKey();
-                key = symAlg.Key;
+                case null:
+                    symAlg.GenerateIV();
+                    break;
+                default:
+                    symAlg.IV = IV;
+                    break;
             }
-            if (IV != null)
-            {
-                this.IV = IV;
-                symAlg.IV = IV;
-            }
-            else
-            {
-                symAlg.GenerateIV();
-                IV = symAlg.IV;
-            }
-
         }
 
         public string EncryptData(string strData)
         {
-            Console.WriteLine($"Plaintext:                {strData}");
             byte[] inputByteArray;
 
             try
-            {            
-                Console.WriteLine($"Key (bytes):              {BitConverter.ToString(symAlg.Key)}");
-                Console.WriteLine($"IV (bytes):               {BitConverter.ToString(symAlg.IV)}");
+            {
                 inputByteArray = Encoding.UTF8.GetBytes(strData);
                 var memoryStream = new MemoryStream();
                 var encryptor = symAlg.CreateEncryptor(symAlg.Key, symAlg.IV);
@@ -57,8 +49,6 @@ namespace Crypto
 
                 var cipher = memoryStream.ToArray();
 
-                Console.WriteLine($"Encrypted cipher (bytes): {BitConverter.ToString(cipher)}");
-
                 return Convert.ToBase64String(cipher);
             }
             catch (Exception ex)
@@ -69,7 +59,7 @@ namespace Crypto
 
         public string DecryptData(string strData)
         {
-            byte[] inputByteArray = new byte[strData.Length];
+            byte[] inputByteArray;
 
             try
             {
@@ -83,7 +73,6 @@ namespace Crypto
                 cryptoStream.FlushFinalBlock();
 
                 var decryptedText = Encoding.UTF8.GetString(memoryStream.ToArray());
-                Console.WriteLine($"Decrypted text:           {decryptedText}");
 
                 return decryptedText;
             }
