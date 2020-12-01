@@ -5,7 +5,7 @@ using System.Text;
 namespace Crypto
 {
 
-    class RSACSPSample
+    public class RSACSPSample
     {
 
         public static byte[] RSAEncrypt(string strData, RSAParameters RSAKeyInfo, bool DoOAEPPadding)

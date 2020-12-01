@@ -1,26 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.Crypto.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Crypto/Crypto/Crypto.csproj">
     <Files>
       <File FileName="Socket/Socket/Program.cs" Line="1" Column="1" />
       <File FileName="Client/Client/Program.cs" />
       <File FileName="Server/Server/Program.cs" Line="1" Column="1" />
-      <File FileName="Crypto/Crypto/Program.cs" Line="51" Column="1" />
       <File FileName="Crypto/Crypto/SymCrypt.cs" Line="90" Column="20" />
       <File FileName="Crypto.Tests/UnitTest1.cs" Line="21" Column="51" />
+      <File FileName="Crypto/Crypto/RSACSPSample.cs" Line="8" Column="12" />
+      <File FileName="Crypto.Tests/SymTests (copy).cs" Line="30" Column="14" />
+      <File FileName="Crypto.Tests/AsymTests (copy).cs" Line="25" Column="74" />
+      <File FileName="Crypto/Crypto/Crypto.csproj" Line="5" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="networks-examples" expanded="True">
             <Node name="Client" expanded="True" />
-            <Node name="Crypto" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="Crypto" expanded="True" selected="True" />
             <Node name="Crypto.Tests" expanded="True" />
             <Node name="Server" expanded="True" />
           </Node>
