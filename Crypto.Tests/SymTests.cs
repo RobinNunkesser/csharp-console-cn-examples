@@ -36,7 +36,7 @@ namespace Crypto.Tests
             var aes = new SymCrypt(new AesManaged());
             var encrypted = aes.EncryptData(Plaintext);
             var decrypted = aes.DecryptData(encrypted);
-            Assert.AreEqual(Plaintext,decrypted);
+            Assert.AreEqual(Plaintext, decrypted);
         }
     }
 }

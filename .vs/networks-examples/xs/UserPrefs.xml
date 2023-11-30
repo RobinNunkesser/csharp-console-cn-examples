@@ -1,36 +1,45 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}|Unit Tests">
-  <MonoDevelop.Ide.ItemProperties.Crypto.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{EE2D503A-29A9-4C18-BC20-C3642B31B5EB}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Crypto/Crypto/Crypto.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.Crypto.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Crypto.Tests/HashTests.cs">
     <Files>
-      <File FileName="Socket/Socket/Program.cs" Line="1" Column="1" />
+      <File FileName="Socket/Socket/Program.cs" />
       <File FileName="Client/Client/Program.cs" />
-      <File FileName="Server/Server/Program.cs" Line="1" Column="1" />
-      <File FileName="Crypto/Crypto/SymCrypt.cs" Line="90" Column="20" />
-      <File FileName="Crypto.Tests/UnitTest1.cs" Line="21" Column="51" />
+      <File FileName="Server/Server/Program.cs" />
+      <File FileName="Crypto/Crypto/SymCrypt.cs" Line="50" Column="53" />
       <File FileName="Crypto/Crypto/RSACSPSample.cs" Line="8" Column="12" />
-      <File FileName="Crypto.Tests/SymTests (copy).cs" Line="30" Column="14" />
-      <File FileName="Crypto.Tests/AsymTests (copy).cs" Line="25" Column="74" />
       <File FileName="Crypto/Crypto/Crypto.csproj" Line="5" Column="36" />
+      <File FileName="Crypto.Tests/Crypto.Tests.csproj" Line="4" Column="26" />
+      <File FileName="Crypto.Tests/SymTests.cs" Line="36" Column="44" />
+      <File FileName="Crypto.Tests/AsymTests.cs" Line="1" Column="1" />
+      <File FileName="Crypto.Tests/HashTests.cs" Line="24" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="networks-examples" expanded="True">
             <Node name="Client" expanded="True" />
-            <Node name="Crypto" expanded="True" selected="True" />
-            <Node name="Crypto.Tests" expanded="True" />
+            <Node name="Crypto" expanded="True" />
+            <Node name="Crypto.Tests">
+              <Node name="HashTests.cs" selected="True" />
+            </Node>
             <Node name="Server" expanded="True" />
+            <Node name="Socket" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="networks-examples" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Socket PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.Socket PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

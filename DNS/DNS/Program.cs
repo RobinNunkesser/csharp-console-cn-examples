@@ -8,7 +8,8 @@ namespace DNS
     {
         static void Main(string[] args)
         {
-            var host = args.Length == 0 ? Dns.GetHostName() : args[0];
+            //var host = args.Length == 0 ? Dns.GetHostName() : args[0];
+            var host = "www.google.de";
 
             Console.WriteLine($"Host: {host}\n");
 
