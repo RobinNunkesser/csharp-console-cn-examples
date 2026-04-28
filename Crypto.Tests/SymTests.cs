@@ -33,7 +33,7 @@ namespace Crypto.Tests
         [Test]
         public void TestAES()
         {
-            var aes = new SymCrypt(new AesManaged());
+            var aes = new SymCrypt(Aes.Create());
             var encrypted = aes.EncryptData(Plaintext);
             var decrypted = aes.DecryptData(encrypted);
             Assert.AreEqual(Plaintext, decrypted);
